@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dubai Property Investment</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<style>
+body {margin:0;font-family:'Poppins',sans-serif;background:#0b0f19;color:#fff;}
+.hero {background: url('https://images.unsplash.com/photo-1508057198894-247b23fe5ade') no-repeat center/cover;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;animation: fadeIn 2s;}
+@keyframes fadeIn {from{opacity:0;}to{opacity:1;}}
+.hero h1 {font-size:40px;margin-bottom:10px;animation: fadeUp 1.5s;}
+.hero p {font-size:20px;margin-bottom:20px;animation: fadeUp 2s;}
+@keyframes fadeUp {from{opacity:0; transform:translateY(20px);}to{opacity:1; transform:translateY(0);}}
+.btn {background:#25D366;padding:15px 25px;border-radius:30px;color:#fff;text-decoration:none;font-weight:600;transition:0.3s;}
+.btn:hover {background:#128C7E;}
+.section {padding:60px 20px;text-align:center;animation: fadeIn 1.5s;}
+.features {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px;}
+.card {background:#111827;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.5);transition:0.3s;} 
+.card:hover {transform: translateY(-10px);}
+.highlight {background:#1f2937;padding:25px;border-radius:15px;margin-top:30px;font-style:italic;}
+.contact {background:#111827;padding:30px;border-radius:15px;margin-top:40px;}
+footer {padding:20px;text-align:center;background:#000;margin-top:40px;}
+.video-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:30px;}
+iframe {width:100%;height:200px;border-radius:15px;}
+.lang-section {margin-top:60px;border-top:1px solid #333;padding-top:40px;}
+form input, form select, form button {width:100%;padding:12px;margin:10px 0;border-radius:8px;border:none;}
+form button {background:#25D366;color:#fff;font-weight:600;cursor:pointer;transition:0.3s;}
+form button:hover {background:#128C7E;}
+.swiper {padding:40px 0;}
+.swiper-slide iframe {height:250px;}
+</style>
+</head>
+<body><div class="hero">
+<h1>🌟 Invest in Dubai Property</h1>
+<p>Affordable Prices | Prime Locations | High ROI</p>
+<a class="btn" href="https://wa.me/971545917706" target="_blank">📲 Contact on WhatsApp</a>
+</div><div class="section">
+<h2>Why Invest in Dubai?</h2>
+<div class="features">
+<div class="card">💰 Affordable Pricing</div>
+<div class="card">📍 Prime Locations</div>
+<div class="card">📈 High ROI Potential</div>
+<div class="card">🧾 Easy Installment Plans</div>
+</div>
+<div class="highlight">“Opportunities like this don’t come often. Smart investors act now and profit fast.”</div>
+</div><div class="section">
+<h2>Our Videos</h2>
+<div class="swiper mySwiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><iframe src="https://www.youtube.com/embed/ovN8L8nDtkQ?si=mM2HEXUOIZhytEar" allowfullscreen></iframe></div>
+<div class="swiper-slide"><iframe src="https://www.youtube.com/embed/LiHpDAnKy2c?si=_60KVphp5wQ94WnV" allowfullscreen></iframe></div>
+<!-- Add more slides as needed -->
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</div><div class="section contact">
+<h2>Contact Now</h2>
+<p><strong>Mizanur Rahman</strong></p>
+<p>📞 +971 54 591 7706</p>
+<p><strong>Aisa Real Estate</strong></p>
+<p>📍 Tamani Arts Building, Office 1157<br>Business Bay, Dubai</p>
+<p>📞 +971 52 313 4466</p>
+<a class="btn" href="https://wa.me/971545917706" target="_blank">Chat on WhatsApp</a>
+<h3>Interested Property Form</h3>
+<form id="interestForm">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<select name="property" required>
+<option value="">Select Property Type</option>
+<option value="apartment">Apartment</option>
+<option value="villa">Villa</option>
+<option value="office">Office</option>
+</select>
+<button type="submit">Send via WhatsApp</button>
+</form>
+</div><!-- Bengali Version --><div class="section lang-section">
+<h2>🌟 দুবাই প্রপার্টিতে বিনিয়োগ করুন</h2>
+<p>সাশ্রয়ী মূল্য | প্রাইম লোকেশন | উচ্চ ROI</p>
+<div class="features">
+<div class="card">💰 সাশ্রয়ী মূল্য</div>
+<div class="card">📍 প্রাইম লোকেশন</div>
+<div class="card">📈 উচ্চ লাভের সম্ভাবনা</div>
+<div class="card">🧾 সহজ কিস্তি সুবিধা</div>
+</div>
+<div class="highlight">“এমন সুযোগ বারবার আসে না — স্মার্ট ইনভেস্টররা এখনই সিদ্ধান্ত নেয়।”</div>
+<div class="contact">
+<h2>যোগাযোগ করুন</h2>
+<p><strong>Mizanur Rahman</strong></p>
+<p>📞 +971 54 591 7706</p>
+<p><strong>Aisa Real Estate</strong></p>
+<p>📍 Tamani Arts Building, Office 1157<br>Business Bay, Dubai</p>
+<p>📞 +971 52 313 4466</p>
+<a class="btn" href="https://wa.me/971545917706" target="_blank">WhatsApp এ যোগাযোগ করুন</a>
+<form id="interestFormBn">
+<input type="text" name="name" placeholder="আপনার নাম" required>
+<input type="tel" name="phone" placeholder="ফোন নম্বর" required>
+<select name="property" required>
+<option value="">প্রপার্টির ধরণ নির্বাচন করুন</option>
+<option value="apartment">অ্যাপার্টমেন্ট</option>
+<option value="villa">ভিলা</option>
+<option value="office">অফিস</option>
+</select>
+<button type="submit">WhatsApp এ পাঠান</button>
+</form>
+</div>
+</div><footer>
+<p>🏡 Smart investment today builds your successful future!</p>
+</footer><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script><script>
+const swiper = new Swiper('.mySwiper', {navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev'},pagination:{el:'.swiper-pagination',clickable:true},loop:true});
+
+document.getElementById('interestForm').addEventListener('submit', function(e){e.preventDefault();const name=this.name.value;const phone=this.phone.value;const property=this.property.value;window.open(`https://wa.me/971545917706?text=${encodeURIComponent(`Hi, my name is ${name}, phone: ${phone}, interested in: ${property}`)}`,'_blank');});
+
+document.getElementById('interestFormBn').addEventListener('submit', function(e){e.preventDefault();const name=this.name.value;const phone=this.phone.value;const property=this.property.value;window.open(`https://wa.me/971545917706?text=${encodeURIComponent(`হ্যালো, আমার নাম ${name}, ফোন: ${phone}, আগ্রহী প্রপার্টি: ${property}`)}`,'_blank');});
+</script></body>
+</html>
