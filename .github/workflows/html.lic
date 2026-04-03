@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest in Dubai | Luxury Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --dark-bg: #0a0e14;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --whatsapp-green: #25D366;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark-bg);
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070') no-repeat center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-gold);
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        /* Property Grid */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 30px;
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+        }
+
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 0 10%;
+        }
+
+        .property-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.4s;
+            backdrop-filter: blur(10px);
+        }
+
+        .property-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--primary-gold);
+        }
+
+        .property-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .property-content {
+            padding: 20px;
+        }
+
+        .property-content h3 {
+            color: var(--primary-gold);
+            margin: 0 0 10px;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background: #111;
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+
+        .feature-box {
+            background: rgba(197, 160, 89, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            width: 250px;
+            text-align: center;
+            border: 1px solid var(--primary-gold);
+        }
+
+        /* CTA Buttons */
+        .btn {
+            background: var(--primary-gold);
+            padding: 15px 35px;
+            border-radius: 50px;
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--whatsapp-green);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            z-index: 1000;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Contact Form */
+        .contact-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: var(--card-bg);
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid #333;
+            color: white;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            background: var(--primary-gold);
+            color: black;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            font-size: 1.1rem;
+        }
+
+        /* Bengali Section Styling */
+        .lang-bn {
+            background: #0f141d;
+            padding: 80px 10% 40px;
+            border-top: 2px solid var(--primary-gold);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #050505;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .property-grid { padding: 0 5%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/971545917706" class="whatsapp-float" target="_blank">
+    <span>Chat on WhatsApp</span>
+</a>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Experience Luxury Living in Dubai</h1>
+    <p>Premium Apartments & Villas in prime locations with high ROI. Start your investment journey today with tax-free returns.</p>
+    <div style="display: flex; gap: 15px;">
+        <a href="#properties" class="btn">View Properties</a>
+        <a href="#contact" class="btn" style="background:transparent; border: 2px solid var(--primary-gold); color: white;">Contact Us</a>
+    </div>
+</div>
+
+<!-- Features -->
+<div class="features">
+    <div class="feature-box">
+        <h3>0% Tax</h3>
+        <p>On Property Income</p>
+    </div>
+    <div class="feature-box">
+        <h3>Golden Visa</h3>
+        <p>For Real Estate Investors</p>
+    </div>
+    <div class="feature-box">
+        <h3>8-10% ROI</h3>
+        <p>Highest in the market</p>
+    </div>
+    <div class="feature-box">
+        <h3>Easy Plans</h3>
+        <p>Interest-free installments</p>
+    </div>
+</div>
+
+<!-- Properties Section -->
+<div id="properties" class="section">
+    <h2 class="section-title">Exclusive Property Collection</h2>
+    <div class="property-grid">
+        <!-- Card 1 -->
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1545324418-f1d3c5b5a57b?q=80&w=1000" alt="Apartment">
+            <div class="property-content">
+                <h3>Luxury Apartments</h3>
+                <p>Modern layouts in Downtown Dubai and Marina. Prime views of Burj Khalifa.</p>
+                <a href="#contact" class="btn" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1000" alt="Villa">
+            <div class="property-content">
+                <h3>Exclusive Villas</h3>
+                <p>Private pool and beachfront villas in Palm Jumeirah and Damac Hills.</p>
+                <a href="#contact" class="btn" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=1000" alt="Penthouse">
+            <div class="property-content">
+                <h3>Modern Penthouses</h3>
+                <p>Unmatched luxury with 360-degree views of the Dubai skyline.</p>
+                <a href="#contact" class="btn" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Slider -->
+<div class="section">
+    <h2 class="section-title">Property Tours</h2>
+    <div class="swiper mySwiper" style="max-width: 900px; margin: auto; padding: 20px;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><iframe style="width:100%; height:400px; border-radius: 20px;" src="https://www.youtube.com/embed/ovN8L8nDtkQ" allowfullscreen></iframe></div>
+            <div class="swiper-slide"><iframe style="width:100%; height:400px; border-radius: 20px;" src="https://www.youtube.com/embed/LiHpDAnKy2c" allowfullscreen></iframe></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<!-- Contact Form -->
+<div id="contact" class="contact-container">
+    <h2 style="text-align:center; color: var(--primary-gold);">Get Expert Consultation</h2>
+    <p style="text-align:center; margin-bottom:30px;">আমাদের প্রতিনিধি আপনার সাথে যোগাযোগ করবে</p>
+    
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 30px;" class="form-grid">
+        <div class="info">
+            <h4>Mizanur Rahman</h4>
+            <p>Aisa Real Estate</p>
+            <p>📍 Tamani Arts, Business Bay, Dubai</p>
+            <p>📞 +971 54 591 7706</p>
+        </div>
+        <form id="interestForm">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <select name="property" required>
+                <option value="">Interested in?</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Villa">Villa</option>
+                <option value="Investment">Investment Plan</option>
+            </select>
+            <button type="submit" class="submit-btn">Send Inquiry via WhatsApp</button>
+        </form>
+    </div>
+</div>
+
+<!-- Bengali Version -->
+<div class="lang-bn">
+    <h2 class="section-title">দুবাই প্রপার্টিতে স্মার্ট বিনিয়োগ</h2>
+    <p style="text-align:center; max-width:800px; margin: 0 auto 40px;">দুবাইয়ের সবচেয়ে আকর্ষণীয় লোকেশনে অ্যাপার্টমেন্ট এবং ভিলা কিনুন সরাসরি সহজ কিস্তিতে। স্মার্ট বিনিয়োগ মানেই নিরাপদ ভবিষ্যৎ।</p>
+    
+    <div class="property-grid">
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?q=80&w=1000" alt="Apartment">
+            <div class="property-content">
+                <h3>বিলাসবহুল অ্যাপার্টমেন্ট</h3>
+                <p>সরাসরি ডেভেলপার থেকে কিনুন, ০% ট্যাক্স এবং সহজ পেমেন্ট প্ল্যান।</p>
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000" alt="Villa">
+            <div class="property-content">
+                <h3>এক্সক্লুসিভ ভিলা</h3>
+                <p>পরিবারের জন্য সেরা এবং নিরিবিলি পরিবেশের ভিলা কালেকশন।</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Mizanur Rahman | Aisa Real Estate Dubai. All Rights Reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.mySwiper', {
+        pagination: { el: '.swiper-pagination', clickable: true },
+        loop: true
+    });
+
+    document.getElementById('interestForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        const name = this.name.value;
+        const phone = this.phone.value;
+        const property = this.property.value;
+        const text = `Hello, I am ${name}. Phone: ${phone}. I am interested in ${property} in Dubai. Please provide details.`;
+        window.open(`https://wa.me/971545917706?text=${encodeURIComponent(text)}`, '_blank');
+    });
+</script>
+
+</body>
+</html>
